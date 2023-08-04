@@ -1,8 +1,8 @@
 {
   "name": "app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Este proyecto tiene como objetivo desarrollar una aplicación para calificar campamentos, facilitando a los usuarios compartir sus experiencias y opiniones sobre distintos lugares de acampada. La plataforma permitirá a los usuarios buscar campgrounds, ver reseñas, agregar nuevas ubicaciones y calificarlas según su experiencia personal.",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
+    "ejs-mate": "^4.0.0",
     "express": "^4.18.2",
     "method-override": "^3.0.0",
     "mongoose": "^7.4.1"
