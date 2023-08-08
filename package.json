@@ -6,14 +6,24 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PaulinaMS2/gestion-de-la-configuracion.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulinaMS2/gestion-de-la-configuracion/issues"
+  },
+  "homepage": "https://github.com/PaulinaMS2/gestion-de-la-configuracion#readme",
+  "keywords": [],
   "dependencies": {
     "ejs": "^3.1.9",
     "ejs-mate": "^4.0.0",
     "express": "^4.18.2",
+    "joi": "^17.9.2",
     "method-override": "^3.0.0",
-    "mongoose": "^7.4.1"
+    "mongoose": "^7.4.2",
+    "nodemon": "^3.0.1"
   }
 }
