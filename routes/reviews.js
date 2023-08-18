@@ -6,12 +6,12 @@ const Review = require('../models/review');
 const Campground = require('../models/campground');
 const {reviewSchema} = require('../schemas');
 
-const validateReview = (req, res, next) =>{
-    const{error} = reviewSchema.validate(req.body);
-    if(error){
-        const msg = error.details.map(el=> el.message).join(',')
-        throw new ExpressError(msg,400)
-    }else{
+const validateReview = (req, res, next) => {
+    const { error } = reviewSchema.validate(req.body);
+    if (error) {
+        const msg = error.details.map(el => el.message).join(',')
+        throw new ExpressError(msg, 400)
+    } else {
         next();
     }
 }
@@ -22,6 +22,7 @@ router.post('/', validateReview, catchAsync(async (req,res) => {
     campground.reviews.push(review);
     await review.save();
     await campground.save();
+    req.flash('success', 'Nueva reseña creada!');
     res.redirect(`/campamentos/${campground._id}`);
 }));
 
@@ -29,6 +30,7 @@ router.delete('/:reviewId', catchAsync(async (req,res) =>{
     const{ id, reviewId} = req.params;
     await Campground.findByIdAndUpdate(id, { $pull : {reviews: reviewId } })
     await Review.findByIdAndDelete(reviewId); 
+    req.flash('success', 'Reseña eliminada correctamente')
     res.redirect(`/campamentos/${id}`);
 }));
 

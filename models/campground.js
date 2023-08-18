@@ -24,6 +24,7 @@ CampgroundSchema.post('findOneAndDelete', async function (doc) {
             }
         })
     }
+    console.log('DELETEDDD')
 })
 
 
