@@ -7,4 +7,4 @@ Colaboradores:
 Para la materia:
 Gestión de la configuración.
 
-Para la ejecución de la aplicación ve a esta página: [Link](https://github.com/PaulinaMS2/gestion-de-la-configuracion/wiki/Gu%C3%ADa-de-Instalaci%C3%B3n-y-Configuraci%C3%B3n)
+Para la ejecución de la aplicación da click en este link: [Link](https://github.com/PaulinaMS2/gestion-de-la-configuracion/wiki/Gu%C3%ADa-de-Instalaci%C3%B3n-y-Configuraci%C3%B3n)
