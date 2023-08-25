@@ -4,7 +4,8 @@
   "description": "Este proyecto tiene como objetivo desarrollar una aplicación para calificar campamentos, facilitando a los usuarios compartir sus experiencias y opiniones sobre distintos lugares de acampada. La plataforma permitirá a los usuarios buscar campgrounds, ver reseñas, agregar nuevas ubicaciones y calificarlas según su experiencia personal.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" : "nodemon app.js"
   },
   "repository": {
     "type": "git",
