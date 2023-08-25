@@ -17,5 +17,13 @@
           </li>
         </ul>
       </div>
+      <div class="navbar-nav ml-auto">
+        <% if(!currentUser) {%>
+        <a class="nav-link" href="/inicio"> Inicio Sesión</a>
+        <a class="nav-link" href="/registro"> Registrarse </a>
+        <%} else{} {%>
+        <a class="nav-link" href="/cierre"> Salir </a>
+        <% } %>
+      </div>
     </div>
   </nav>
